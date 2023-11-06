@@ -1,5 +1,5 @@
 # rBGR
-rBGR is an R package that implements a flexible Bayesian model to construct heterogeneous graphs under non-normal continuous data. For more details, please see Yao et al. (2023+)  Robust Bayesian Graphical Regression Models for Assessing Tumor Heterogeneity in Proteomic Networks.
+rBGR is an R package that implements a flexible Bayesian model to construct heterogeneous graphs under non-normal continuous data. For more details, please see Yao et al. (2023+)  Robust Bayesian Graphical Regression Models for Assessing Tumor Heterogeneity in Proteomic Networks on [arXiv](https://arxiv.org/abs/2310.18474).
 
 # Manual
 The `rBGR` accommodates the non-normality by the random scales and builds graphs through graphical regressions. The coefficients of graphical regression incorporate the subject-specific information and encode the graph edges by the zero coefficients. Due to the formulation of graphical regression, `rBGR` obtains posterior samples of coefficients by Gibbs sampler and infers the random scales by the Metropolis-Hasting algorithm. We refer to more details in Yao et al. (2023+) Section 4. 
