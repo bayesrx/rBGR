@@ -9,7 +9,7 @@ In the package, we wrap the MCMC algorithm in a function of `rBGR_mcmc_Int()`. G
  
 The MCMC function `rBGR_mcmc_Int()` takes several arguments with different options for users to control the algorithm. To run the MCMC, users are required to specify the data by the following three arguments: (i) regressand by the argument $Y$, (ii) regressor by the argument $X$, and (iii) the covariate by the argument $U$. The function `rBGR_mcmc_Int()` also allows additional options to control the model, such as $N$ for the number of iterations, `burnin` for the number of iterations to be discarded, and `seed_` for the initial seeds. 
 
-The function `rBGR_mcmc_Int()` produces the posterior samples of (i) two components of coefficients $\xi_{j,k,h}$ and $\eta_{j,k,h}$, (ii) threshold parameter $t_j$ and random scales $d_{ij}$. Given the covariates, users can obtain the posterior coefficients by $\alpha_{j,k,h}=\eta_{j,k,h}\xi_{j,k,h}$ and edges by $\beta_{j,k}( \mathbf{X_i})=\theta_{j,k}(\mathbf{X_i}) \mathbf{I}( \lvert\theta_{j,k}(\mathbf{X_i})\rvert>t_{j})$, where $\theta_{j,k}(\mathbf{X_i})=\sum_{h=1}^q \alpha_{j,k,h}X_{ih}$.
+The function `rBGR_mcmc_Int()` produces the posterior samples of (i) two components of coefficients $\xi_{j,k,h}$ and $\eta_{j,k,h}$, (ii) threshold parameter $t_j$ and random scales $d_{ij}$. Given the covariates, users can obtain the posterior coefficients by $\alpha_{j,k,h}=\eta_{j,k,h}\xi_{j,k,h}$ and edges by $\beta_{j,k}( \mathbf{X_i})=\theta_{j,k}(\mathbf{X_i}) \mathbf{I}( \lvert\theta_{j,k}(\mathbf{X_i})\rvert> t)$, where $\theta_{j,k}(\mathbf{X_i})=\sum_{h=1}^q \alpha_{j,k,h}X_{ih}$.
 
  
 ## Summarizing Posterior Samples
